@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cont.Previdência</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 10px;
+        }
+        .question {
+            font-weight: bold;
+            margin: 50px;
+        }
+        .option {
+            margin: 10px 0;
+            padding: 1px;
+            border-radius: 5px;
+        }
+        .option input[type="radio"] {
+            margin-right: 10px;
+        }
+        .correct {
+            background-color: #d4edda; /* Verde claro para fundo */
+            color: #155724; /* Texto verde escuro */
+            font-weight: bold;
+        }
+        .incorrect {
+            background-color: #f8d7da; /* Vermelho claro para fundo */
+            color: #721c24; /* Texto vermelho escuro */
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+<body>
+<h2>Cont.Previdência</h2>
+
+<div id="quiz">
+    <!-- Questão 36 -->
+    <div class="question" id="question36">
+        <p>36. Sobre as atitudes adequadas para cada fase do ciclo da vida, é correto afirmar que:</p>
+        <label class="option"><input type="radio" name="q36" value="A" onclick="checkAnswer(this)"> A necessidade de consumir surge do desejo de manter um padrão de vida elevado.</label><br>
+        <label class="option"><input type="radio" name="q36" value="B" data-correct="true" onclick="checkAnswer(this)"> É necessário um novo planejamento para os diferentes ciclos da vida.</label><br>
+        <label class="option"><input type="radio" name="q36" value="C" onclick="checkAnswer(this)"> As pessoas não se importam de perder o que conquistaram.</label><br>
+        <label class="option"><input type="radio" name="q36" value="D" onclick="checkAnswer(this)"> O fluxo de recebimentos e formação do patrimônio se concentra na fase de aposentadoria.</label><br>
+        <label class="option"><input type="radio" name="q36" value="E" onclick="checkAnswer(this)"> Os compromissos financeiros estão concentrados unicamente na fase de acumulação.</label>
+    </div>
+
+    <!-- Questão 37 -->
+    <div class="question" id="question37">
+        <p>37. O poder dos juros compostos e do tempo impactam na acumulação da reserva para a renda na Previdência Complementar. Sobre juros compostos é correto dizer que:</p>
+        <label class="option"><input type="radio" name="q37" value="A" data-correct="true" onclick="checkAnswer(this)"> Nos juros compostos o dinheiro rende mais.</label><br>
+        <label class="option"><input type="radio" name="q37" value="B" onclick="checkAnswer(this)"> A taxa de juros é aplicada somente sobre o valor inicial do investimento.</label><br>
+        <label class="option"><input type="radio" name="q37" value="C" onclick="checkAnswer(this)"> São calculados sobre o capital inicial do investimento.</label><br>
+        <label class="option"><input type="radio" name="q37" value="D" onclick="checkAnswer(this)"> São aplicados sobre o capital desatualizado.</label><br>
+        <label class="option"><input type="radio" name="q37" value="E" onclick="checkAnswer(this)"> São aplicados sobre o saldo acumulado, excluindo-se os juros anteriormente auferidos.</label>
+    </div>
+
+    <!-- Questão 38 -->
+    <div class="question" id="question38">
+        <p>38. A Previdência Social é um seguro que garante o pagamento de uma renda ao contribuinte ou à sua família. Oferece vários benefícios que juntos garantem tranquilidade no presente e no futuro assegurando um rendimento para os segurados e seus dependentes. Para ter a proteção da Previdência Social é necessário:</p>
+        <label class="option"><input type="radio" name="q38" value="A" onclick="checkAnswer(this)"> Apenas demonstrar a necessidade ao benefício.</label><br>
+        <label class="option"><input type="radio" name="q38" value="B" onclick="checkAnswer(this)"> Se inscrever para ter assegurado o benefício quando tiver necessidade.</label><br>
+        <label class="option"><input type="radio" name="q38" value="C" onclick="checkAnswer(this)"> Se inscrever e contribuir todos os meses, passando assim a ter direito aos benefícios quando tiver necessidade.</label><br>
+        <label class="option"><input type="radio" name="q38" value="D" data-correct="true" onclick="checkAnswer(this)"> Se inscrever e, quando ver alguma folga no seu orçamento, aplicar algum dinheiro para assegurar o direito aos benefícios da Previdência Social.</label><br>
+        <label class="option"><input type="radio" name="q38" value="E" onclick="checkAnswer(this)"> Apenas se inscrever, sem necessidade de contribuir.</label><br>
+        <p id="feedback38"></p>
+    </div>
+    <!-- Questão 39 -->
+    <div class="question" id="question39">
+        <p>39. A Previdência Social possui dois regimes, sendo obrigatória a filiação do trabalhador a, pelo menos, um deles. Como são chamados esses regimes?</p>
+        <label class="option"><input type="radio" name="q39" value="A" onclick="checkAnswer(this)"> Regime de Capitalização (RC) e Regime de Repartição Simples (RRS).</label><br>
+        <label class="option"><input type="radio" name="q39" value="B" data-correct="true" onclick="checkAnswer(this)"> Regime Geral de Previdência Social (RGPS) e os Regimes Próprios de Previdência Social (RPPS).</label><br>
+        <label class="option"><input type="radio" name="q39" value="C" onclick="checkAnswer(this)"> Regime Contributário de Previdência Social (RCPS) e Regime Simples de Previdência Social (RSPS).</label><br>
+        <label class="option"><input type="radio" name="q39" value="D" onclick="checkAnswer(this)"> Regime Único de Previdência Social (RUPS) e Regime Privado de Previdência Complementar (RPPC).</label><br>
+        <label class="option"><input type="radio" name="q39" value="E" onclick="checkAnswer(this)"> Plano Geral de Benefício Livre (PGBL) e Vida Geral de Benefício Livre (VGBL).</label>
+    </div>
+    <!-- Questão 40 -->
+    <div class="question" id="question40">
+        <p>40. A Previdência Complementar é operada por entidades de Previdência Complementar, que têm por objetivo principal instituir e executar planos de benefícios de caráter previdenciário. Essas entidades são classificadas em abertas e fechadas. Sobre as EAPC é correto afirmar que:</p>
+        <label class="option"><input type="radio" name="q40" value="A" data-correct="true" onclick="checkAnswer(this)"> São aquelas constituídas unicamente sob a forma de sociedades anônimas – S/A.</label><br>
+        <label class="option"><input type="radio" name="q40" value="B" onclick="checkAnswer(this)"> Operam fundos de pensão.</label><br>
+        <label class="option"><input type="radio" name="q40" value="C" onclick="checkAnswer(this)"> Possuem como órgão normativo o Conselho Nacional de Previdência Complementar – CNPC.</label><br>
+        <label class="option"><input type="radio" name="q40" value="D" onclick="checkAnswer(this)"> Possuem como órgão fiscalizador a Superintendência Nacional de Previdência Complementar – PREVIC.</label><br>
+        <label class="option"><input type="radio" name="q40" value="E" onclick="checkAnswer(this)"> São aquelas organizadas sob a forma de fundação ou sociedade civil, sem fins lucrativos.</label>
+    </div>
+    <!-- Questão 41 -->
+    <div class="question" id="question41">
+        <p>41. O órgão fiscalizador das Entidades Abertas de Previdência Complementar é o(a):</p>
+        <label class="option"><input type="radio" name="q41" value="A" onclick="checkAnswer(this)"> CNSP.</label><br>
+        <label class="option"><input type="radio" name="q41" value="B" onclick="checkAnswer(this)"> PREVIC.</label><br>
+        <label class="option"><input type="radio" name="q41" value="C" onclick="checkAnswer(this)"> CNPC.</label><br>
+        <label class="option"><input type="radio" name="q41" value="D" onclick="checkAnswer(this)"> Banco Central.</label><br>
+        <label class="option"><input type="radio" name="q41" value="E" data-correct="true" onclick="checkAnswer(this)"> SUSEP.</label>
+    </div>
+    <!-- Questão 42 -->
+    <div class="question" id="question42">
+        <p>42. Quando nos referimos às formas de contratação dos planos de previdência é correto afirmar que:</p>
+        <label class="option"><input type="radio" name="q42" value="A" data-correct="true" onclick="checkAnswer(this)"> O plano coletivo deverá ser disponibilizado, obrigatoriamente, a todos os componentes do grupo que mantenham vínculo jurídico da mesma natureza com a empresa.</label><br>
+        <label class="option"><input type="radio" name="q42" value="B" onclick="checkAnswer(this)"> O plano coletivo averbado é o plano em que a pessoa jurídica propõe a contratação ficando investida de poderes de representação exclusivamente para contratá-lo, participando, total ou parcialmente, do custeio do plano.</label><br>
+        <label class="option"><input type="radio" name="q42" value="C" onclick="checkAnswer(this)"> O plano coletivo instituído é o plano em que a pessoa jurídica propõe a contratação, ficando investida de poderes e de representação exclusivamente para contratá-lo, sem participar do custeio do plano.</label><br>
+        <label class="option"><input type="radio" name="q42" value="D" onclick="checkAnswer(this)"> Os planos de Entidades Fechadas de Previdência Complementar só estão disponíveis para contratação individual.</label><br>
+        <label class="option"><input type="radio" name="q42" value="E" onclick="checkAnswer(this)"> Os planos de Entidades Abertas de Previdência Complementar só estão disponíveis para contratação coletiva.</label>
+    </div>
+
+    <!-- Questão 43 -->
+    <div class="question" id="question43">
+        <p>43. As coberturas dos planos de Previdência Complementar Aberta podem ser estruturadas na forma de:</p>
+        <label class="option"><input type="radio" name="q43" value="A" onclick="checkAnswer(this)"> Contribuição definida ou mista.</label><br>
+        <label class="option"><input type="radio" name="q43" value="B" onclick="checkAnswer(this)"> Contribuição variável ou de contribuição definida.</label><br>
+        <label class="option"><input type="radio" name="q43" value="C" data-correct="true" onclick="checkAnswer(this)"> Contribuição variável ou de benefício definido.</label><br>
+        <label class="option"><input type="radio" name="q43" value="D" onclick="checkAnswer(this)"> Contribuição definida ou de benefício definido.</label><br>
+        <label class="option"><input type="radio" name="q43" value="E" onclick="checkAnswer(this)"> Benefício definido ou de benefício variável.</label>
+    </div>
+
+    <!-- Questão 44 -->
+    <div class="question" id="question44">
+        <p>44. Quanto à admissão em planos de Previdência Complementar Aberta, podemos afirmar que:</p>
+        <label class="option"><input type="radio" name="q44" value="A" data-correct="true" onclick="checkAnswer(this)"> No ato da inscrição, deverá ser entregue, obrigatoriamente, ao participante o regulamento do plano.</label><br>
+        <label class="option"><input type="radio" name="q44" value="B" onclick="checkAnswer(this)"> A EAPC deve aceitar a proposta de inscrição de um proponente menor de idade, sem que estes sejam representados ou assistidos.</label><br>
+        <label class="option"><input type="radio" name="q44" value="C" onclick="checkAnswer(this)"> A contratação de qualquer plano de Previdência Complementar Aberta dar-se-á mediante assinatura na proposta de inscrição e consequente remessa do certificado de participante em 45 dias.</label><br>
+        <label class="option"><input type="radio" name="q44" value="D" onclick="checkAnswer(this)"> A EAPC não pode determinar limites mínimos e máximos de idade para ingresso em seus planos.</label><br>
+        <label class="option"><input type="radio" name="q44" value="E" onclick="checkAnswer(this)"> A EAPC não poderá exigir comprovação de renda ou provas de saúde, como declaração complementar de saúde ou de atividade laborativa.</label>
+    </div>
+
+    <!-- Questão 45 -->
+    <div class="question" id="question45">
+        <p>45. Nos planos de Previdência Complementar Aberta, quanto ao resgate, podemos afirmar que:</p>
+        <label class="option"><input type="radio" name="q45" value="A" onclick="checkAnswer(this)"> O intervalo a ser estabelecido no plano, para que se possa realizar um segundo resgate está compreendido entre 60 dias e 180 meses.</label><br>
+        <label class="option"><input type="radio" name="q45" value="B" data-correct="true" onclick="checkAnswer(this)"> O período de carência para o primeiro resgate deverá estar compreendido entre 60 dias e 60 meses.</label><br>
+        <label class="option"><input type="radio" name="q45" value="C" onclick="checkAnswer(this)"> Para investidores qualificados, o prazo mínimo para resgate é de 24 meses.</label><br>
+        <label class="option"><input type="radio" name="q45" value="D" onclick="checkAnswer(this)"> Nos planos estruturados na modalidade de BD Benefício Definido, o resgate pode ser total ou parcial.</label><br>
+        <label class="option"><input type="radio" name="q45" value="E" onclick="checkAnswer(this)"> Nos planos estruturados na modalidade de CV Contribuição Variável, o resgate só pode ser total.</label>
+    </div>
+    <!-- Questão 46 -->
+    <div class="question" id="question46">
+        <p>46. Maria não é investidora qualificada e contratou um PGBL em 03/06/2024 na SEGURADORA A, realizando o primeiro e único aporte em 03/06/2024. Em 11/06/2024 descobriu que os fundos da SEGURADORA B rendem mais e cobram menos Taxa de Administração. Então, contratou um PGBL na SEGURADORA B e deseja portar o dinheiro para o seu novo plano. Quanto tempo ela tem que esperar para solicitar a portabilidade para a SEGURADORA B?</p>
+        <label class="option"><input type="radio" name="q46" value="A" data-correct="true" onclick="checkAnswer(this)"> 60 dias.</label><br>
+        <label class="option"><input type="radio" name="q46" value="B" onclick="checkAnswer(this)"> 90 dias.</label><br>
+        <label class="option"><input type="radio" name="q46" value="C" onclick="checkAnswer(this)"> 180 dias.</label><br>
+        <label class="option"><input type="radio" name="q46" value="D" onclick="checkAnswer(this)"> 60 meses.</label><br>
+        <label class="option"><input type="radio" name="q46" value="E" onclick="checkAnswer(this)"> Não tem carência para portabilidade.</label>
+    </div>
+
+    <!-- Questão 47 -->
+    <div class="question" id="question47">
+        <p>47. Nos planos com coberturas de risco, o período de carência, quando existir, não pode exceder a:</p>
+        <label class="option"><input type="radio" name="q47" value="A" onclick="checkAnswer(this)">  1 ano.</label><br>
+        <label class="option"><input type="radio" name="q47" value="B" data-correct="true" onclick="checkAnswer(this)"> 2 anos.</label><br>
+        <label class="option"><input type="radio" name="q47" value="C" onclick="checkAnswer(this)"> 6 meses.</label><br>
+        <label class="option"><input type="radio" name="q47" value="D" onclick="checkAnswer(this)"> 9 meses.</label><br>
+        <label class="option"><input type="radio" name="q47" value="E" onclick="checkAnswer(this)"> 18 meses.</label>
+    </div>
+
+    <!-- Questão 48 -->
+    <div class="question" id="question48">
+        <p>48. Adriana contratou um plano de Previdência Complementar Aberta com cobertura de risco e gostaria de proteger seus filhos menores com uma renda no caso de seu falecimento. Qual tipo de cobertura de risco o Corretor deve recomendar para ela?</p>
+        <label class="option"><input type="radio" name="q48" value="A" data-correct="true" onclick="checkAnswer(this)"> Plano de Pensão aos Menores.</label><br>
+        <label class="option"><input type="radio" name="q48" value="B" onclick="checkAnswer(this)"> Plano de Pecúlio por Invalidez.</label><br>
+        <label class="option"><input type="radio" name="q48" value="C" onclick="checkAnswer(this)"> Plano de Renda por Invalidez com Prazo Mínimo Garantido.</label><br>
+        <label class="option"><input type="radio" name="q48" value="D" data-correct="true" onclick="checkAnswer(this)"> Plano de Pecúlio por Morte.</label><br>
+        <label class="option"><input type="radio" name="q48" value="E" onclick="checkAnswer(this)"> Plano de Pensão por Prazo Certo.</label>
+    </div>
+
+    <!-- Questão 49 -->
+    <div class="question" id="question49">
+        <p>49. Sobre os aspectos tributário dos planos de previdência, é correto afirmar que:</p>
+        <label class="option"><input type="radio" name="q49" value="A" data-correct="true" onclick="checkAnswer(this)"> A pessoa física pode deduzir os valores que pagou a título de contribuição para o PGBL, até 12% da sua renda bruta.</label><br>
+        <label class="option"><input type="radio" name="q49" value="B" onclick="checkAnswer(this)"> A pessoa jurídica instituidora de um plano de previdência pode deduzir até 30% do total da sua folha de salários.</label><br>
+        <label class="option"><input type="radio" name="q49" value="C" onclick="checkAnswer(this)"> Pela tabela progressiva, o resgate é tributado pela alíquota de 35%, depois compensa na Declaração Anual de IR.</label><br>
+        <label class="option"><input type="radio" name="q49" value="D" onclick="checkAnswer(this)"> Pela tabela regressiva, o resgate é tributado pelo método PMP – Prazo Médio Ponderado.</label><br>
+        <label class="option"><input type="radio" name="q49" value="E" onclick="checkAnswer(this)"> Pela tabela regressiva, quanto maior o valor, maior a alíquota de IR.</label>
+    </div>
+
+    <!-- Questão 50 -->
+    <div class="question" id="question50">
+        <p>50. Após uma conversa com o seu corretor, um cliente resolveu pesquisar mais sobre a importância do planejamento financeiro e da aposentadoria, porque:</p>
+        <label class="option"><input type="radio" name="q50" value="A" onclick="checkAnswer(this)"> A aposentadoria oferecida pela Previdência Social tem-se tornado suficiente para assegurar o padrão de renda.</label><br>
+        <label class="option"><input type="radio" name="q50" value="B" onclick="checkAnswer(this)"> Voltar a atenção para este tema só é importante para quem está prestes a se aposentar.</label><br>
+        <label class="option"><input type="radio" name="q50" value="C" onclick="checkAnswer(this)"> A reforma na Previdência Social criou um clima desfavorável para a Previdência Complementar.</label><br>
+        <label class="option"><input type="radio" name="q50" value="D" data-correct="true" onclick="checkAnswer(this)"> O planejamento financeiro de qualidade deve incluir a aposentadoria o mais cedo possível.</label><br>
+        <label class="option"><input type="radio" name="q50" value="E" onclick="checkAnswer(this)"> Por ser um investimento de curto prazo, é necessário planejar a aposentadoria.</label>
+    </div>
+
+    <!-- Questão 51 -->
+    <div class="question" id="question51">
+        <p>51. O poder dos juros compostos e do tempo impacta positivamente na acumulação dos recursos para a previdência. Isso quer dizer que:</p>
+        <label class="option"><input type="radio" name="q51" value="A" onclick="checkAnswer(this)"> Os juros compostos atuam contra os investimentos, pois não são responsáveis pelo crescimento do dinheiro ao longo do tempo.</label><br>
+        <label class="option"><input type="radio" name="q51" value="B" data-correct="true" onclick="checkAnswer(this)"> Quanto maior o tempo de acumulação, menores serão os valores de contribuições necessárias.</label><br>
+        <label class="option"><input type="radio" name="q51" value="C" onclick="checkAnswer(this)"> Nos juros compostos, o dinheiro rende menos.</label><br>
+        <label class="option"><input type="radio" name="q51" value="D" onclick="checkAnswer(this)"> Quanto mais tarde for iniciado o plano de previdência, melhor.</label><br>
+        <label class="option"><input type="radio" name="q51" value="E" onclick="checkAnswer(this)"> Os juros compostos incidem somente sobre o valor inicial do investimento.</label>
+    </div>
+    <!-- Questão 52 -->
+    <div class="question" id="question52">
+        <p>52. Após uma conversa com o seu corretor, um cliente resolveu pesquisar mais sobre a Seguridade Social e descobriu que esse sistema visa assegurar os direitos relativos à:</p>
+        <label class="option"><input type="radio" name="q52" value="A" onclick="checkAnswer(this)"> Morte, invalidez e sobrevivência.</label><br>
+        <label class="option"><input type="radio" name="q52" value="B" onclick="checkAnswer(this)"> Aposentadoria, pensão e reclusão.</label><br>
+        <label class="option"><input type="radio" name="q52" value="C" onclick="checkAnswer(this)"> Servidores públicos e profissionais da iniciativa privada.</label><br>
+        <label class="option"><input type="radio" name="q52" value="D" data-correct="true" onclick="checkAnswer(this)"> Saúde, previdência e assistência social.</label><br>
+        <label class="option"><input type="radio" name="q52" value="E" onclick="checkAnswer(this)"> Incapacidade, idade avançada e encargos de família.</label>
+    </div>
+
+    <!-- Questão 53 -->
+    <div class="question" id="question53">
+        <p>53. A Previdência Social é organizada por meio de dois regimes exclusivos a públicos-alvo distintos. São eles:</p>
+        <label class="option"><input type="radio" name="q53" value="A" data-correct="true" onclick="checkAnswer(this)"> RGPS exclusivo aos funcionários da iniciativa privada e aos trabalhadores do setor público contratados como celetistas e RPPS exclusivo aos servidores públicos e militares.</label><br>
+        <label class="option"><input type="radio" name="q53" value="B" onclick="checkAnswer(this)"> Social, voltado para pessoas de baixo poder aquisitivo, e privado, para pessoas com maior poder aquisitivo.</label><br>
+        <label class="option"><input type="radio" name="q53" value="C" onclick="checkAnswer(this)"> RGPS exclusivo aos servidores públicos e militares, e RPPS exclusivo aos funcionários da iniciativa privada.</label><br>
+        <label class="option"><input type="radio" name="q53" value="D" onclick="checkAnswer(this)"> Aposentadoria para os segurados e pensão para os dependentes.</label><br>
+        <label class="option"><input type="radio" name="q53" value="E" onclick="checkAnswer(this)"> Previdência Social para funcionários da iniciativa privada e Previdência Complementar para os funcionários públicos.</label>
+    </div>
+
+    <!-- Questão 54 -->
+    <div class="question" id="question54">
+        <p>54. Para entendermos a situação atual da Previdência Social brasileira, devemos considerar, tecnicamente, dois fatores principais. Tais fatores são:</p>
+        <label class="option"><input type="radio" name="q54" value="A" onclick="checkAnswer(this)"> A estabilidade da economia e a diminuição do desemprego.</label><br>
+        <label class="option"><input type="radio" name="q54" value="B" onclick="checkAnswer(this)"> O aumento da taxa de natalidade e a diminuição da expectativa de vida.</label><br>
+        <label class="option"><input type="radio" name="q54" value="C" data-correct="true" onclick="checkAnswer(this)"> O regime financeiro no qual é estruturado (repartição simples) e a evolução da demografia brasileira.</label><br>
+        <label class="option"><input type="radio" name="q54" value="D" onclick="checkAnswer(this)"> O direito constitucional de aposentadoria e a segurança de cobertura do déficit pela Lei Orçamentária Anual.</label><br>
+        <label class="option"><input type="radio" name="q54" value="E" onclick="checkAnswer(this)"> As reservas individuais constituídas e a possibilidade de transferência dos valores para um plano de Previdência Complementar.</label>
+    </div>
+    <!-- Questão 55 -->
+    <div class="question" id="question55">
+        <p>55. Garantir uma independência financeira na aposentadoria é um objetivo a ser perseguido. Considerando o cenário atual da previdência social no Brasil, qual a melhor recomendação a se fazer para um cliente?</p>
+        <label class="option"><input type="radio" name="q55" value="A" onclick="checkAnswer(this)"> Parar de contribuir para a Previdência Social.</label><br>
+        <label class="option"><input type="radio" name="q55" value="B" onclick="checkAnswer(this)"> Contratar um VGBL, pois o PGBL não possui incentivos fiscais e não garante esse objetivo.</label><br>
+        <label class="option"><input type="radio" name="q55" value="C" onclick="checkAnswer(this)"> Aumentar os valores de contribuição da Previdência Social em vez de adquirir um plano de complementação previdenciária.</label><br>
+        <label class="option"><input type="radio" name="q55" value="D" data-correct="true" onclick="checkAnswer(this)"> Contratar um plano com cobertura por sobrevivência ou um seguro com cobertura por sobrevivência.</label><br>
+        <label class="option"><input type="radio" name="q55" value="E" onclick="checkAnswer(this)"> Manter contribuições apenas para Previdência Social, pois é o sistema mais seguro, sem possibilidades de alterações.</label>
+    </div>
+
+    <!-- Questão 56 -->
+    <div class="question" id="question56">
+        <p>56. A seguridade social brasileira foi organizada, observando-se os princípios básicos definidos no texto constitucional. Qual princípio impede que benefícios ou serviços sejam criados ou majorados sem correspondentes fontes de custeio?</p>
+        <label class="option"><input type="radio" name="q56" value="A" onclick="checkAnswer(this)"> Seletividade e distributividade na prestação de benefícios e serviços.</label><br>
+        <label class="option"><input type="radio" name="q56" value="B" data-correct="true" onclick="checkAnswer(this)"> Preexistência do custeio em relação aos benefícios ou serviços.</label><br>
+        <label class="option"><input type="radio" name="q56" value="C" onclick="checkAnswer(this)"> Equidade na forma de participação do custeio.</label><br>
+        <label class="option"><input type="radio" name="q56" value="D" onclick="checkAnswer(this)"> Diversidade da base de financiamento.</label><br>
+        <label class="option"><input type="radio" name="q56" value="E" onclick="checkAnswer(this)"> Caráter democrático e descentralizado da gestão administrativa.</label>
+    </div>
+<!-- Questão 57 -->
+<div class="question" id="question57">
+    <p>57. A Previdência Complementar no Brasil é operada por dois tipos de entidades. Em um desses tipos, as entidades são constituídas unicamente sob a forma de sociedades anônimas com o objetivo principal de instituir planos que podem ter coberturas de morte, invalidez e sobrevivência. Trata-se das entidades chamadas:</p>
+    <label class="option"><input type="radio" name="q57" value="A" onclick="checkAnswer(this)"> Entidades Instituidoras.</label><br>
+    <label class="option"><input type="radio" name="q57" value="B" onclick="checkAnswer(this)"> Entidades Fechadas de Previdência Complementar.</label><br>
+    <label class="option"><input type="radio" name="q57" value="C" onclick="checkAnswer(this)"> RGPS.</label><br>
+    <label class="option"><input type="radio" name="q57" value="D" onclick="checkAnswer(this)"> RPPS.</label><br>
+    <label class="option"><input type="radio" name="q57" value="E" data-correct="true" onclick="checkAnswer(this)"> Entidades Abertas de Previdência Complementar.</label>
+</div>
+
+<!-- Questão 58 -->
+<div class="question" id="question58">
+    <p>58. A década de 80 foi marcada pela introdução de novos planos previdenciários e pelo aparecimento de administradores especializados e seguradoras estruturadas para esse tipo de operação. Pode-se afirmar que o fator que contribuiu para esse acontecimento foi:</p>
+    <label class="option"><input type="radio" name="q58" value="A" onclick="checkAnswer(this)"> A proibição de comercialização dos montepios.</label><br>
+    <label class="option"><input type="radio" name="q58" value="B" onclick="checkAnswer(this)"> A privatização do IRB.</label><br>
+    <label class="option"><input type="radio" name="q58" value="C" data-correct="true" onclick="checkAnswer(this)"> A regulamentação da Previdência Complementar com a promulgação da Lei 6.435, de 15 de julho de 1977 e do Decreto Lei 81.402/78.</label><br>
+    <label class="option"><input type="radio" name="q58" value="D" onclick="checkAnswer(this)"> A permissão para seguradoras internacionais operarem no Brasil.</label><br>
+    <label class="option"><input type="radio" name="q58" value="E" onclick="checkAnswer(this)"> A promulgação da Lei Complementar 109.</label>
+</div>
+
+<!-- Questão 59 -->
+<div class="question" id="question59">
+    <p>59. Na Previdência Complementar são utilizados termos distintos para identificar o cliente que está em fase recebendo de contribuição e aquele que já está o benefício de aposentadoria. Esses termos são, respectivamente:</p>
+    <label class="option"><input type="radio" name="q59" value="A" onclick="checkAnswer(this)"> Segurado e beneficiário.</label><br>
+    <label class="option"><input type="radio" name="q59" value="B" data-correct="true" onclick="checkAnswer(this)"> Participante e assistido.</label><br>
+    <label class="option"><input type="radio" name="q59" value="C" onclick="checkAnswer(this)"> Contribuinte e aposentado.</label><br>
+    <label class="option"><input type="radio" name="q59" value="D" onclick="checkAnswer(this)"> Contratante e remanescente.</label><br>
+    <label class="option"><input type="radio" name="q59" value="E" onclick="checkAnswer(this)"> Subscritor e titular.</label>
+</div>
+<!-- Questão 60 -->
+<div class="question" id="question60">
+    <p>60. Uma das determinações da Lei Complementar 109 foi:</p>
+    <label class="option"><input type="radio" name="q60" value="A" onclick="checkAnswer(this)"> A incorporação do Ministério da Previdência e Assistência Social pelo Ministério da Fazenda.</label><br>
+    <label class="option"><input type="radio" name="q60" value="B" onclick="checkAnswer(this)"> A responsabilização da PREVIC pela fiscalização das Sociedades Seguradoras.</label><br>
+    <label class="option"><input type="radio" name="q60" value="C" data-correct="true" onclick="checkAnswer(this)"> A restrição da constituição das Entidades Abertas de Previdência Complementar unicamente à forma de sociedades anônimas.</label><br>
+    <label class="option"><input type="radio" name="q60" value="D" onclick="checkAnswer(this)"> A passagem de obrigação da fiscalização das Entidades Abertas de Previdência Complementar para o CNSP.</label><br>
+    <label class="option"><input type="radio" name="q60" value="E" onclick="checkAnswer(this)"> A regulamentação do PGBL e do VGBL.</label>
+</div>
+
+<!-- Questão 61 -->
+<div class="question" id="question61">
+    <p>61. Muitas pessoas desejam guardar uma parcela de seus recursos ao longo do tempo, adquirindo um plano de previdência complementar para garantir uma renda futura. Com relação à previdência complementar, podemos afirmar que:</p>
+    <label class="option"><input type="radio" name="q61" value="A" data-correct="true" onclick="checkAnswer(this)"> É uma forma de se precaver contra o risco de não ter recursos suficientes no futuro, economizando parte do salário atual para usufruir dos recursos acumulados na aposentadoria.</label><br>
+    <label class="option"><input type="radio" name="q61" value="B" onclick="checkAnswer(this)"> A pessoa que contrata um plano de previdência complementar é denominada aposentada, enquanto a pessoa em gozo do benefício é denominada participante.</label><br>
+    <label class="option"><input type="radio" name="q61" value="C" onclick="checkAnswer(this)"> A pessoa que contrata um plano de previdência complementar não se preocupa em garantir na aposentadoria uma renda futura.</label><br>
+    <label class="option"><input type="radio" name="q61" value="D" onclick="checkAnswer(this)"> A previdência complementar representa uma alternativa de poupança, de caráter exclusivamente público, destinada à manutenção do poder aquisitivo.</label><br>
+    <label class="option"><input type="radio" name="q61" value="E" onclick="checkAnswer(this)"> A previdência complementar é formadora e mantenedora de poupança de curto prazo, sendo dispensável, para fazer qualquer investimento, que se tenha prévia ou simultaneamente uma poupança.</label>
+</div>
+
+<!-- Questão 62 -->
+<div class="question" id="question62">
+    <p>62. Quanto ao carregamento nos planos de previdência complementar é correto afirmar que:</p>
+    <label class="option"><input type="radio" name="q62" value="A" onclick="checkAnswer(this)"> Deve incidir sobre o patrimônio líquido do fundo.</label><br>
+    <label class="option"><input type="radio" name="q62" value="B" onclick="checkAnswer(this)"> Deve ser de, no máximo, 30% para as coberturas estruturadas na modalidade de contribuição variável.</label><br>
+    <label class="option"><input type="radio" name="q62" value="C" onclick="checkAnswer(this)"> Pode ser cobrado apenas uma vez, ou no ato da contribuição ou no momento do resgate/portabilidade.</label><br>
+    <label class="option"><input type="radio" name="q62" value="D" onclick="checkAnswer(this)"> Pode sofrer aumento de acordo com fatores justificáveis.</label><br>
+    <label class="option"><input type="radio" name="q62" value="E" data-correct="true" onclick="checkAnswer(this)"> Pode ser cobrado no momento da contribuição; no momento do resgate/portabilidade; ou no ato da contribuição e no momento do resgate/portabilidade.</label>
+</div>
+<!-- Questão 63 -->
+<div class="question" id="question63">
+    <p>63. Ao adquirir um plano de previdência privada aberta individual com cobertura por sobrevivência, Valéria foi apresentada a vários conceitos sobre esse tipo de plano. O valor correspondente aos aportes efetuados por Valéria para o custeio do plano é denominado:</p>
+    <label class="option"><input type="radio" name="q63" value="A" data-correct="true" onclick="checkAnswer(this)"> Contribuição.</label><br>
+    <label class="option"><input type="radio" name="q63" value="B" onclick="checkAnswer(this)"> Vesting.</label><br>
+    <label class="option"><input type="radio" name="q63" value="C" onclick="checkAnswer(this)"> Carregamento.</label><br>
+    <label class="option"><input type="radio" name="q63" value="D" onclick="checkAnswer(this)"> Assistência financeira.</label><br>
+    <label class="option"><input type="radio" name="q63" value="E" onclick="checkAnswer(this)"> Garantia técnica.</label>
+</div>
+
+<!-- Questão 64 -->
+<div class="question" id="question64">
+    <p>64. Lucia tem um plano de previdência com cobertura por sobrevivência estruturada na modalidade de contribuição variável e com cobertura por morte estruturada na modalidade de benefício definido. Quais serão os limites de carregamento aplicáveis ao plano de previdência de Lucia?</p>
+    <label class="option"><input type="radio" name="q64" value="A" data-correct="true" onclick="checkAnswer(this)"> Até 10% para a cobertura estruturada na modalidade de contribuição variável e até 30% para a cobertura estruturada na modalidade de benefício definido.</label><br>
+    <label class="option"><input type="radio" name="q64" value="B" onclick="checkAnswer(this)"> Até 30% para a cobertura estruturada na modalidade de contribuição variável e até 15% para a cobertura estruturada na modalidade de benefício definido.</label><br>
+    <label class="option"><input type="radio" name="q64" value="C" onclick="checkAnswer(this)"> 15% para a cobertura de sobrevivência e até 10% para a cobertura de risco.</label><br>
+    <label class="option"><input type="radio" name="q64" value="D" onclick="checkAnswer(this)"> 30% para a cobertura de sobrevivência e até 20% para a cobertura de risco.</label><br>
+    <label class="option"><input type="radio" name="q64" value="E" onclick="checkAnswer(this)"> Até 20% para a cobertura estruturada na modalidade de contribuição variável e até 10% para a cobertura estruturada na modalidade de benefício definido.</label>
+</div>
+<!-- Questão 65 -->
+<div class="question" id="question65">
+    <p>65. O plano coletivo comercializado pelas Entidades Abertas de Previdência Complementar em que a pessoa jurídica propõe a contratação, ficando investida de poderes de representação exclusivamente para contratá-lo, sem participar do custeio do plano, é denominado:</p>
+    <label class="option"><input type="radio" name="q65" value="A" data-correct="true" onclick="checkAnswer(this)"> Plano Coletivo Averbado.</label><br>
+    <label class="option"><input type="radio" name="q65" value="B" onclick="checkAnswer(this)"> Plano Coletivo Instituído.</label><br>
+    <label class="option"><input type="radio" name="q65" value="C" onclick="checkAnswer(this)"> Plano Coletivo Estipulado.</label><br>
+    <label class="option"><input type="radio" name="q65" value="D" onclick="checkAnswer(this)"> Plano Coletivo Multipatrocinado.</label><br>
+    <label class="option"><input type="radio" name="q65" value="E" onclick="checkAnswer(this)"> Plano Coletivo Exclusivo.</label>
+</div>
+
+<!-- Questão 66 -->
+<div class="question" id="question66">
+    <p>66. José foi a uma corretora decidido a contratar um PGBL. Ao preencher a proposta para contratação, informou que desejaria aplicar seu dinheiro em um fundo que invista até 100% do capital em renda variável. Para José, o corretor deve:</p>
+    <label class="option"><input type="radio" name="q66" value="A" data-correct="true" onclick="checkAnswer(this)"> Verificar se José é um investidor qualificado; caso contrário, esclarecer que o limite para investimento em renda variável é de 70% do capital do fundo.</label><br>
+    <label class="option"><input type="radio" name="q66" value="B" onclick="checkAnswer(this)"> Explicar para José que, de acordo com a determinação da SUSEP, um fundo pode investir, no máximo, 49% do seu capital em aplicações de renda variável.</label><br>
+    <label class="option"><input type="radio" name="q66" value="C" onclick="checkAnswer(this)"> Informar para José que esse tipo de aplicação é de alto risco e que, por isso, ele deve optar por colocar o dinheiro em fundos com 100% em renda fixa.</label><br>
+    <label class="option"><input type="radio" name="q66" value="D" onclick="checkAnswer(this)"> Esclarecer que os FIE de planos de previdência complementar não trabalham com investimentos em renda variável.</label><br>
+    <label class="option"><input type="radio" name="q66" value="E" onclick="checkAnswer(this)"> Identificar os fundos com essa composição e oferecê-los a José.</label>
+</div>
+<!-- Questão 67 -->
+<div class="question" id="question67">
+    <p>67. Ao analisar a rentabilidade de seu fundo, um cliente verificou que a taxa de administração é de 2%. No entanto, não ficou claro como essa taxa é cobrada. Caso o cliente entre em contato com a central de atendimento da EAPC, ele será informado de que a taxa de administração verificada:</p>
+    <label class="option"><input type="radio" name="q67" value="A" onclick="checkAnswer(this)"> Corresponde ao percentual cobrado diariamente sobre o patrimônio do fundo para cobrir as despesas com administração.</label><br>
+    <label class="option"><input type="radio" name="q67" value="B" onclick="checkAnswer(this)"> É cobrada apenas caso o fundo apresente rentabilidade positiva.</label><br>
+    <label class="option"><input type="radio" name="q67" value="C" onclick="checkAnswer(this)"> É comum em fundos de investimento, e que ele deverá descontar esse percentual da rentabilidade informada para saber a rentabilidade líquida.</label><br>
+    <label class="option"><input type="radio" name="q67" value="D" data-correct="true" onclick="checkAnswer(this)"> Corresponde ao percentual anual, mas é cobrada diariamente sobre o patrimônio líquido do fundo.</label><br>
+    <label class="option"><input type="radio" name="q67" value="E" onclick="checkAnswer(this)"> Será cobrada sobre o valor da contribuição no ato de sua realização e/ou no momento da retirada do dinheiro.</label>
+</div>
+
+<!-- Questão 68 -->
+<div class="question" id="question68">
+    <p>68. Um cliente está em dúvida quanto à diferença entre o PGBL e o VGBL. Para ajudá-lo, seu corretor deverá esclarecer que:</p>
+    <label class="option"><input type="radio" name="q68" value="A" onclick="checkAnswer(this)"> Ambos são planos de previdência complementar e a diferença está apenas na parte tributária.</label><br>
+    <label class="option"><input type="radio" name="q68" value="B" onclick="checkAnswer(this)"> O VGBL é um seguro de vida, e o PGBL, um plano de previdência, portanto, possuem objetivos distintos.</label><br>
+    <label class="option"><input type="radio" name="q68" value="C" data-correct="true" onclick="checkAnswer(this)"> São tecnicamente iguais, porém, por questões tributárias, o primeiro é um plano de previdência complementar e o segundo é um seguro de pessoas por sobrevivência.</label><br>
+    <label class="option"><input type="radio" name="q68" value="D" onclick="checkAnswer(this)"> Apesar de regulamentados, esses planos não são comercializados no mercado brasileiro.</label><br>
+    <label class="option"><input type="radio" name="q68" value="E" onclick="checkAnswer(this)"> O PGBL oferece a possibilidade de escolha dos fundos de investimento para aplicação do capital, e o VGBL, não.</label>
+</div>
+
+<!-- Questão 69 -->
+<div class="question" id="question69">
+    <p>69. Finda a fase de acumulação de recursos, os planos de previdência oferecem diversas modalidades de renda ao participante. Algumas modalidades são estruturadas em regime atuarial, isto é, dependem da idade do participante para serem calculadas. A modalidade de renda que não é atuarial, por ser estruturada em regime financeiro, sendo, portanto, uma renda financeira é a:</p>
+    <label class="option"><input type="radio" name="q69" value="A" onclick="checkAnswer(this)"> Renda Vitalícia.</label><br>
+    <label class="option"><input type="radio" name="q69" value="B" onclick="checkAnswer(this)"> Renda Temporária.</label><br>
+    <label class="option"><input type="radio" name="q69" value="C" onclick="checkAnswer(this)"> Renda Vitalícia com Prazo Mínimo Garantido.</label><br>
+    <label class="option"><input type="radio" name="q69" value="D" data-correct="true" onclick="checkAnswer(this)"> Renda por Prazo Certo.</label><br>
+    <label class="option"><input type="radio" name="q69" value="E" onclick="checkAnswer(this)"> A que ele desejar, uma vez que todas as rendas são financeiras.</label>
+</div>
+ <!-- Questão 70 -->
+ <div class="question" id="question70">
+    <p>70. Com o encerramento da fase acumulação de recursos de um plano de previdência complementar, o participante pode optar por receber à vista o saldo acumulado em sua provisão matemática de benefícios a conceder ou transformá-la em um tipo de renda. Se, na data escolhida para a concessão do benefício, o participante optar por receber uma renda mensal que será paga por toda a sua vida, cessando com sua morte, ele terá escolhido a renda:</p>
+    <label class="option"><input type="radio" name="q70" value="A" data-correct="true" onclick="checkAnswer(this)"> Renda mensal vitalícia.</label><br>
+    <label class="option"><input type="radio" name="q70" value="B" onclick="checkAnswer(this)"> Renda mensal temporária.</label><br>
+    <label class="option"><input type="radio" name="q70" value="C" onclick="checkAnswer(this)"> Renda Mensal Vitalícia com Prazo Mínimo Garantido.</label><br>
+    <label class="option"><input type="radio" name="q70" value="D" onclick="checkAnswer(this)"> Renda Mensal Vitalícia Reversível ao Beneficiário Indicado.</label><br>
+    <label class="option"><input type="radio" name="q70" value="E" onclick="checkAnswer(this)"> Renda Mensal por Prazo Certo.</label>
+</div>
+
+<!-- Questão 71 -->
+<div class="question" id="question71">
+    <p>71. Ao analisar os planos que pagam benefícios por morte, Patrícia encontrou um plano cujo objetivo é a concessão de um pecúlio beneficiário ao indicado em decorrência da morte do participante ocorrida durante o período de cobertura, após cumprido o período de carência estabelecido no plano. Logo, podemos concluir que o plano analisado por Patrícia é o:</p>
+    <label class="option"><input type="radio" name="q71" value="A" data-correct="true" onclick="checkAnswer(this)"> Plano pecúlio por morte.</label><br>
+    <label class="option"><input type="radio" name="q71" value="B" onclick="checkAnswer(this)"> Plano pecúlio por invalidez total por doença.</label><br>
+    <label class="option"><input type="radio" name="q71" value="C" onclick="checkAnswer(this)"> Plano pecúlio por invalidez total por acidente.</label><br>
+    <label class="option"><input type="radio" name="q71" value="D" onclick="checkAnswer(this)"> Plano pecúlio por invalidez parcial por doença.</label><br>
+    <label class="option"><input type="radio" name="q71" value="E" onclick="checkAnswer(this)"> Plano pecúlio por invalidez parcial por acidente.</label>
+</div>
+
+<!-- Questão 72 -->
+<div class="question" id="question72">
+    <p>72. Um cliente contratou um plano de previdência com a cobertura de invalidez total e permanente. Após um ano, ele sofreu um acidente e foi considerado parcialmente inválido por seu médico. Nessa situação, é possível afirmar que:</p>
+    <label class="option"><input type="radio" name="q72" value="A" onclick="checkAnswer(this)"> O período de carência para coberturas de risco é de vinte e quatro meses e, por isso, não há direito ao capital segurado.</label><br>
+    <label class="option"><input type="radio" name="q72" value="B" onclick="checkAnswer(this)"> O capital segurado será pago de acordo com o percentual previsto nas condições gerais da cobertura de invalidez.</label><br>
+    <label class="option"><input type="radio" name="q72" value="C" data-correct="true" onclick="checkAnswer(this)"> O capital segurado não será pago, pois trata-se de uma invalidez parcial e o plano cobre apenas invalidez total e permanente.</label><br>
+    <label class="option"><input type="radio" name="q72" value="D" onclick="checkAnswer(this)"> Para que o capital segurado seja pago, ele deverá obter um laudo de invalidez parcial emitido pelo INSS.</label><br>
+    <label class="option"><input type="radio" name="q72" value="E" onclick="checkAnswer(this)"> O capital segurado somente seria pago se ele tivesse contratado a cobertura da previdência para invalidez parcial.</label>
+</div>
+<!-- Questão 73 -->
+<div class="question" id="question73">
+    <p>73. Nos planos com cobertura de morte ou de invalidez total e permanente, é comum o estabelecimento de período de carência. Com relação a esse período, podemos afirmar que:</p>
+    <label class="option"><input type="radio" name="q73" value="A" data-correct="true" onclick="checkAnswer(this)"> Quando a morte ou invalidez for causada por acidente, não será considerado período de carência.</label><br>
+    <label class="option"><input type="radio" name="q73" value="B" onclick="checkAnswer(this)"> Não pode ser substituído por exame médico.</label><br>
+    <label class="option"><input type="radio" name="q73" value="C" onclick="checkAnswer(this)"> O período de carência, quando existir, pode exceder 4 anos.</label><br>
+    <label class="option"><input type="radio" name="q73" value="D" onclick="checkAnswer(this)"> Não pode ser substituído por declaração pessoal de saúde.</label><br>
+    <label class="option"><input type="radio" name="q73" value="E" onclick="checkAnswer(this)"> É contado a partir do fim da vigência do contrato.</label>
+</div>
+
+<!-- Questão 74 -->
+<div class="question" id="question74">
+    <p>74. Um cliente, que faz a declaração anual do imposto de renda pelo modelo completo, deseja contratar um plano de previdência privada que possibilite deduzir da declaração as contribuições feitas ao plano. Nesse caso, o corretor deve esclarecer que as contribuições feitas ao plano de previdência privada:</p>
+    <label class="option"><input type="radio" name="q74" value="A" onclick="checkAnswer(this)"> VGBL podem ser deduzidas até o limite de 12% da renda bruta anual, desde que também haja recolhimento para a Previdência Social.</label><br>
+    <label class="option"><input type="radio" name="q74" value="B" onclick="checkAnswer(this)"> PGBL podem ser deduzidas até o limite de 12% da renda bruta anual, sem necessidade de recolhimento para a Previdência Social.</label><br>
+    <label class="option"><input type="radio" name="q74" value="C" data-correct="true" onclick="checkAnswer(this)"> PGBL podem ser deduzidas até o limite de 12% da renda bruta anual, desde que também haja recolhimento para o RGPS ou para o RPPS.</label><br>
+    <label class="option"><input type="radio" name="q74" value="D" onclick="checkAnswer(this)"> PGBL podem ser deduzidas até o limite de 20% da renda bruta anual, desde que também haja recolhimento exclusivamente para o RPPS.</label><br>
+    <label class="option"><input type="radio" name="q74" value="E" onclick="checkAnswer(this)"> VGBL podem ser deduzidas até o limite de 20% da renda bruta anual, independente de recolhimentos para o RGPS ou para o RPPS.</label>
+</div>
+
+<!-- Questão 75 -->
+<div class="question" id="question75">
+    <p>75. Ao efetuar o primeiro resgate do seu plano de previdência complementar, determinado cliente optou pela tabela regressiva do imposto de renda. Isso significa que:</p>
+    <label class="option"><input type="radio" name="q75" value="A" onclick="checkAnswer(this)"> Seu limite de dedução variará de acordo com o tempo de plano.</label><br>
+    <label class="option"><input type="radio" name="q75" value="B" data-correct="true" onclick="checkAnswer(this)"> Sua alíquota de tributação será determinada de acordo com o tempo de permanência de seu dinheiro no plano.</label><br>
+    <label class="option"><input type="radio" name="q75" value="C" onclick="checkAnswer(this)"> Quanto maior for o valor do seu benefício, menor será a sua tributação.</label><br>
+    <label class="option"><input type="radio" name="q75" value="D" onclick="checkAnswer(this)"> O cliente contratou um VGBL.</label><br>
+    <label class="option"><input type="radio" name="q75" value="E" onclick="checkAnswer(this)"> A tributação será feita na fonte, porém ajustada na declaração de ajuste anual.</label>
+</div>
+<!-- Questão 76 -->
+<div class="question" id="question76">
+    <p>76. João está visando um futuro mais seguro. Ele não possui muitos conhecimentos sobre investimentos, mas deseja optar por uma modalidade que não exija a declaração completa do imposto de renda e não ofereça dedução fiscal. Qual produto de investimento é mais adequado para João?</p>
+    <label class="option"><input type="radio" name="q76" value="A" data-correct="true" onclick="checkAnswer(this)"> Vida Gerador de Benefício Livre (VGBL).</label><br>
+    <label class="option"><input type="radio" name="q76" value="B" onclick="checkAnswer(this)"> Plano de Pensão por Morte.</label><br>
+    <label class="option"><input type="radio" name="q76" value="C" onclick="checkAnswer(this)"> Plano Tradicional.</label><br>
+    <label class="option"><input type="radio" name="q76" value="D" onclick="checkAnswer(this)"> Plano com Atualização Garantida e Performance (PAGP).</label><br>
+    <label class="option"><input type="radio" name="q76" value="E" onclick="checkAnswer(this)"> Plano Gerador de Benefício Livre (PGBL).</label>
+</div>
+
+<!-- Questão 77 -->
+<div class="question" id="question77">
+    <p>77. Um cliente deseja contratar um plano de previdência complementar com opção pela tabela progressiva do imposto de renda. Seu objetivo é receber uma renda de aposentadoria no futuro. Como será a tributação desse cliente quando do recebimento da renda?</p>
+    <label class="option"><input type="radio" name="q77" value="A" data-correct="true" onclick="checkAnswer(this)"> O valor do benefício será tributado de acordo com a tabela progressiva mensal vigente.</label><br>
+    <label class="option"><input type="radio" name="q77" value="B" onclick="checkAnswer(this)"> O valor do benefício não será tributado.</label><br>
+    <label class="option"><input type="radio" name="q77" value="C" onclick="checkAnswer(this)"> O valor do benefício será tributado em 15%, independentemente do valor.</label><br>
+    <label class="option"><input type="radio" name="q77" value="D" onclick="checkAnswer(this)"> O valor do benefício será tributado pelo método PMP.</label><br>
+    <label class="option"><input type="radio" name="q77" value="E" onclick="checkAnswer(this)"> O valor do benefício será tributado pelo método PEPS.</label>
+</div>
+
+<!-- Questão 78 -->
+<div class="question" id="question78">
+    <p>78. Existe uma política que é elemento-chave para o estabelecimento de um sistema de previdência complementar que permite na dedutibilidade base de cálculo do imposto de renda devido, na formação do fundo previdenciário, e que é justificável economicamente em função dos efeitos positivos na alocação da poupança financeira. A que política nos referimos?</p>
+    <label class="option"><input type="radio" name="q78" value="A" onclick="checkAnswer(this)"> Política comercial.</label><br>
+    <label class="option"><input type="radio" name="q78" value="B" data-correct="true" onclick="checkAnswer(this)"> Política tributária.</label><br>
+    <label class="option"><input type="radio" name="q78" value="C" onclick="checkAnswer(this)"> Política de underwriting.</label><br>
+    <label class="option"><input type="radio" name="q78" value="D" onclick="checkAnswer(this)"> Política de marketing.</label><br>
+    <label class="option"><input type="radio" name="q78" value="E" onclick="checkAnswer(this)"> Política de remuneração.</label>
+</div>
+<!-- Questão 79 -->
+<div class="question" id="question79">
+    <p>79. Existe uma política que é elemento-chave para o estabelecimento de um sistema de previdência complementar que permite na dedutibilidade base de cálculo do imposto de renda devido, na formação do fundo previdenciário, e que é justificável economicamente em função dos efeitos positivos na alocação da poupança financeira. A que política nos referimos?</p>
+    <label class="option"><input type="radio" name="q79" value="A" onclick="checkAnswer(this)"> Política comercial.</label><br>
+    <label class="option"><input type="radio" name="q79" value="B" data-correct="true" onclick="checkAnswer(this)"> Política tributária.</label><br>
+    <label class="option"><input type="radio" name="q79" value="C" onclick="checkAnswer(this)"> Política de underwriting.</label><br>
+    <label class="option"><input type="radio" name="q79" value="D" onclick="checkAnswer(this)"> Política de marketing.</label><br>
+    <label class="option"><input type="radio" name="q79" value="E" onclick="checkAnswer(this)"> Política de remuneração.</label>
+</div>
+
+<!-- Questão 80 -->
+<div class="question" id="question80">
+    <p>80. Quando nos referimos ao carregamento dos planos de previdência complementar, é correto afirmar que:</p>
+    <label class="option"><input type="radio" name="q80" value="A" data-correct="true" onclick="checkAnswer(this)"> Parte do carregamento poderá ser destinada à remuneração dos trabalhos realizados pela instituidora/averbadora, relacionados à divulgação, propaganda, serviços de adesão, cobrança, repasse e prestação de informações.</label><br>
+    <label class="option"><input type="radio" name="q80" value="B" onclick="checkAnswer(this)"> Poderá ser cobrado carregamento para fazer face à cobrança de inscrição.</label><br>
+    <label class="option"><input type="radio" name="q80" value="C" onclick="checkAnswer(this)"> O valor do carregamento poderá ser de 30% da contribuição efetuada para a cobertura estruturada na modalidade de contribuição variável.</label><br>
+    <label class="option"><input type="radio" name="q80" value="D" onclick="checkAnswer(this)"> O limite máximo do carregamento, para a cobertura estruturada na modalidade de benefício definido, é de 10% da contribuição efetuada.</label><br>
+    <label class="option"><input type="radio" name="q80" value="E" onclick="checkAnswer(this)"> O valor ou percentual definido poderá sofrer aumento em função do tipo de cliente.</label>
+</div>
+<script>
+    function checkAnswer(selectedOption) {
+        const questionDiv = selectedOption.closest('.question');
+        const correctOption = questionDiv.querySelector('input[data-correct]');
+
+        // Limpa qualquer estilo anterior
+        questionDiv.querySelectorAll('.option').forEach(option => {
+            option.classList.remove('correct', 'incorrect');
+        });
+
+        // Adiciona o estilo correto ou incorreto
+        if (selectedOption === correctOption) {
+            selectedOption.parentElement.classList.add('correct');
+        } else {
+            selectedOption.parentElement.classList.add('incorrect');
+            correctOption.parentElement.classList.add('correct'); // Destaque a resposta correta
+        }
+    }
+</script>
+
+    <footer>
+        <p>Desenvolvido por Amannda D'áwyla</p>
+    </footer>
+</body>
+</html>
+
